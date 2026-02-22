@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sobre o Fenerbahtchê</title>
+</head>
+
+<body>
+    <section>
+        <header class="top-bar">
+            <p>SITE OFICIAL <strong>FENERBAHTCHÊ</strong></p>
+        </header>
+
+        <nav class="navbar">
+
+            <div class="nav-left">
+                <span class="menu-toggle">☰</span>
+            </div>
+
+            <div class="logo">
+                <img src="../assets/escudo fenerbahtche2.png" alt="Logo do time">
+            </div>
+
+            <ul class="menu">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../sobre-nos/">SOBRE NÓS</a></li>
+                <li class="dropdown">
+                    <a href="#">CONQUISTAS <span class="seta">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../campeonato2023/">Sub16 2023</a></li>
+                        <li><a href="../jogadoresSub16/">Sub16 2025</a></li>
+                        <li><a href="../jogadoresFut7/">Elenco Fut7 2025</a></li>
+                    </ul>
+                </li>
+                <li><a href="../compra-das-camisas/">COMPRE A SUA CAMISA</a></li>
+                <li>FALE CONOSCO</li>
+            </ul>
+
+            <div class="icons">
+                <a href="https://www.instagram.com/fenerbahtche2023/" target="_blank" rel="noopener"
+                    aria-label="Instagram">
+                    <img src="../assets/Instagram.svg" alt="Instagram Fenerbahtchê" class="social-icon">
+                </a>
+                <a href="https://wa.me/5551999550636?text=Olá, gostaria de encomendar minha camisa!" target="_blank"
+                    rel="noopener" aria-label="WhatsApp">
+                    <img src="../assets/whatsapp.png" alt="WhatsApp Fenerbahtchê" class="social-icon">
+                </a>
+            </div>
+        </nav>
+    </section>
+
+    <section class="historia">
+        <div class="historia-overlay">
+            <h1>Nossa História</h1>
+
+            <p>
+                O <strong>Fenerbahtchê</strong> nasceu em 2023, em Salvador do Sul, de forma simples e espontânea:
+                durante uma aula de matemática, quatro amigos decidiram criar um time para disputar
+                o Citadino de Futsal Sub-16.
+            </p>
+
+            <p>
+                Sem estrutura profissional e com poucos recursos, o grupo correu atrás de patrocinadores
+                para confeccionar o primeiro fardamento e viabilizar a participação na competição.
+                A união dentro e fora de quadra se tornou a base do time desde o primeiro momento.
+            </p>
+
+            <h3 class="ano">🥇 2023 — O primeiro título</h3>
+            <p>
+                Ainda no ano de fundação, o Fenerbahtchê conquistou o Citadino Sub-16 em uma final
+                emocionante decidida nos pênaltis, mostrando coragem e personalidade.
+            </p>
+
+            <h3 class="ano">⏸️ 2024 — Pausa e amadurecimento</h3>
+            <p>
+                Em 2024 não houve a categoria Sub-16 no futsal municipal.
+                Mesmo sem competição oficial, o grupo permaneceu unido e se fortaleceu.
+            </p>
+
+            <h3 class="ano">🔥 2025 — Afirmação e evolução</h3>
+            <p>
+                O Fenerbahtchê voltou ainda mais forte e conquistou o Sub-16 de forma invicta,
+                consolidando sua força no cenário municipal.
+            </p>
+
+            <p>
+                No mesmo ano, disputou pela primeira vez o Fut7 Municipal,
+                chegando à final e conquistando o vice-campeonato.
+            </p>
+
+            <h3 class="ano">🚀 2026 — Ainda mais fortes</h3>
+            <p>
+                Após uma temporada histórica, o time retorna mais experiente e determinado,
+                buscando novos títulos e sonhando com desafios maiores,
+                como disputar o Citadino Força Livre no futuro.
+            </p>
+
+            <h3 class="valores">❤️ Muito além dos resultados</h3>
+            <br>
+            <ul>
+                <li>Amizade verdadeira</li>
+                <li>Espírito coletivo</li>
+                <li>Respeito dentro e fora de quadra</li>
+                <li>Raça e dedicação</li>
+                <li>União dentro e fora de campo</li>
+            </ul>
+            <br>
+            <h3 class="final">
+                Mais do que um time, o Fenerbahtchê é uma família construída
+                com paixão pelo futebol, amizade e a vontade de crescer juntos, dentro e fora das quadras.
+            </h3>
+        </div>
+        </div>
+    </section>
+    <script>
+        const toggle = document.querySelector(".menu-toggle");
+        const menu = document.querySelector(".menu");
+
+        toggle.addEventListener("click", (e) => {
+            e.stopPropagation();
+            menu.classList.toggle("show");
+        });
+
+        document.addEventListener("click", (e) => {
+            if (!menu.contains(e.target) && menu.classList.contains("show")) {
+                menu.classList.remove("show");
+            }
+        });
+    </script>
+</body>
+
+</html>

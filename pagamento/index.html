@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Pagamento Camisas</title>
+</head>
+
+<body>
+    <section>
+        <header class="top-bar">
+            <p>SITE OFICIAL <strong>FENERBAHTCHÊ</strong></p>
+        </header>
+
+        <nav class="navbar">
+
+            <div class="nav-left">
+                <span class="menu-toggle">☰</span>
+            </div>
+
+            <div class="logo">
+                <img src="../assets/escudo fenerbahtche2.png" alt="Logo do time">
+            </div>
+
+            <ul class="menu">
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="../sobre-nos/">SOBRE NÓS</a></li>
+                <li class="dropdown">
+                    <a href="#">CONQUISTAS <span class="seta">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="sub16-2023.html">Sub16 2023</a></li>
+                        <li><a href="sub16-2025.html">Sub16 2025</a></li>
+                        <li><a href="fut7.html">Elenco Fut7 2025</a></li>
+                    </ul>
+                </li>
+                <li><a href="../compra-das-camisas/">COMPRE A SUA CAMISA</a></li>
+                <li>FALE CONOSCO</li>
+            </ul>
+
+            <div class="icons">
+                <a href="https://www.instagram.com/fenerbahtche2023/" target="_blank" rel="noopener"
+                    aria-label="Instagram">
+                    <img src="../assets/Instagram.svg" alt="Instagram Fenerbahtchê" class="social-icon">
+                </a>
+                <a href="https://wa.me/5551999550636?text=Olá, gostaria de encomendar minha camisa!" target="_blank"
+                    rel="noopener" aria-label="WhatsApp">
+                    <img src="../assets/whatsapp.png" alt="WhatsApp Fenerbahtchê" class="social-icon">
+                </a>
+            </div>
+        </nav>
+    </section>
+
+    <div class="pagamento-box">
+
+        <h1>PAGAMENTO</h1>
+
+        <p class="instrucao">
+            Escaneie o <strong>QR Code</strong> ou copie o <strong>código Pix</strong> abaixo.<br>
+            Após o pagamento, envie o <strong>comprovante</strong> via WhatsApp.
+        </p>
+
+        <img src="../assets/Pague com pix moderno verde branco preto a4 (1).png" alt="QR Code Pix" class="pix">
+
+        <div class="codigo">
+            <input type="text" id="linkPagamento"
+                value="00020101021126330014br.gov.bcb.pix011103938334029520400005303986540579.995802BR5919RENAN CARLO SIEBERT6013CARLOS BARBOS62070503***6304298D"
+                readonly>
+
+            <button onclick="copiarLink()">Copiar código Pix</button>
+
+            <a href="https://wa.me/5551999550636?text=Olá! Já realizei o pagamento da camisa do Fenerbahtchê. Segue o comprovante:"
+                target="_blank" class="btn-whatsapp">
+                📲 Enviar comprovante
+            </a>
+
+            <div class="recebedor">
+                <strong>Recebedor:</strong><br>
+                Renan Carlo Siebert<br>
+                Salvador do Sul - RS
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function copiarLink() {
+        let link = document.getElementById("linkPagamento");
+        link.select();
+        link.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(link.value);
+        alert("Código Pix copiado! Agora cole no app do seu banco.");
+    }
+
+
+    const toggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".menu");
+
+    toggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        menu.classList.toggle("show");
+    });
+
+    document.addEventListener("click", (e) => {
+        if (!menu.contains(e.target) && menu.classList.contains("show")) {
+            menu.classList.remove("show");
+        }
+    });
+
+</script>
+
+</html>

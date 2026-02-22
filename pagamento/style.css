@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 120px;
+}
+
+/* Estilos para a seção de início */
+.nav-left {
+    display: none;
+}
+
+.top-bar {
+    background: #830000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    background: #125c00;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar {
+    transition: 0.3s;
+}
+
+.navbar.scrolled {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* dropdown */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 6px;
+    min-width: 180px;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    z-index: 9999; /* 👈 ESSENCIAL */
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 12px;
+    color: #333;
+}
+
+.dropdown-menu li a:hover {
+    background: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.seta {
+    font-size: 12px;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .seta {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #000;
+}
+
+.logo img {
+    max-height: 90px;
+    width: auto;
+    display: block;
+}
+
+.logo img:hover {
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu > li {
+    position: relative;
+    cursor: pointer;
+}
+
+.menu > li > a:hover {
+    color: #ffcc00;
+    transition: 0.3s;
+}
+
+.menu > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.icons {
+    display: flex;
+    gap: 8px;
+}
+
+div.icons img {
+    height: 30px;
+    cursor: pointer;
+}
+
+div.icons img:hover {
+    height: 32px;
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+div.icons img:active {
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+.pagamento-box {
+    max-width: 420px;
+    margin: 60px auto;
+    background: white;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.pagamento-box h1 {
+    margin-bottom: 10px;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+.instrucao {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.pix {
+    width: 220px;
+    max-width: 80%;
+    margin: 15px auto;
+}
+
+.codigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.codigo input {
+    width: 100%;
+}
+
+.btn-whatsapp {
+    background: #830000;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn-whatsapp:hover {
+    background: #b30000;
+}
+
+.btn-whatsapp:active {
+    background: #e90000;
+    opacity: 0.8;
+}
+
+.recebedor {
+    font-size: 13px;
+    color: #444;
+    margin-top: 8px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #125c00;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;   
+    margin-bottom: 30px;
+}
+
+button:hover {
+    background: #1ebe5d;
+}
+
+button:active {
+    background: rgb(0, 207, 52);
+    opacity: 0.8;
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+
+    .nav-left {
+        display: block;
+        color: white;
+        font-size: 26px;
+        cursor: pointer;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .icons {
+        display: none;
+    }
+
+        .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 50%;
+        background: #125c00;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        display: none;
+        border-radius: 0 0 0 30px;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+        gap: 5px;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+}

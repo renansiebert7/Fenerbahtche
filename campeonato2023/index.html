@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Campeão do Sub-16 2023</title>
+</head>
+
+<body>
+    <section>
+        <header class="top-bar">
+            <p>SITE OFICIAL <strong>FENERBAHTCHÊ</strong></p>
+        </header>
+
+        <nav class="navbar">
+
+            <div class="nav-left">
+                <span class="menu-toggle">☰</span>
+            </div>
+
+            <div class="logo">
+                <img src="../assets/escudo fenerbahtche2.png" alt="Logo do time">
+            </div>
+
+            <ul class="menu">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../sobre-nos/">SOBRE NÓS</a></li>
+                <li class="dropdown">
+                    <a href="#">CONQUISTAS <span class="seta">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../campeonato2023/">Sub16 2023</a></li>
+                        <li><a href="../jogadoresSub16/">Sub16 2025</a></li>
+                        <li><a href="../jogadoresFut7/">Elenco Fut7 2025</a></li>
+                    </ul>
+                </li>
+                <li><a href="../compra-das-camisas/">COMPRE A SUA CAMISA</a></li>
+                <li>FALE CONOSCO</li>
+            </ul>
+
+            <div class="icons">
+                <a href="https://www.instagram.com/fenerbahtche2023/" target="_blank" rel="noopener"
+                    aria-label="Instagram">
+                    <img src="../assets/Instagram.svg" alt="Instagram Fenerbahtchê" class="social-icon">
+                </a>
+                <a href="https://wa.me/5551999550636?text=Olá, gostaria de encomendar minha camisa!" target="_blank"
+                    rel="noopener" aria-label="WhatsApp">
+                    <img src="../assets/whatsapp.png" alt="WhatsApp Fenerbahtchê" class="social-icon">
+                </a>
+            </div>
+        </nav>
+    </section>
+
+
+    <section>
+        <div class="intro">
+            <h1 class="valores">Nosso Primeiro Título!</h1>
+            <h2>Conquista do Campeonato do Citadino Sub-16 2023 de Salvador do Sul - RS</h2>
+            <h3> <strong class="fenerbas">Fenerbahtchê</strong> ﾠXﾠ <strong class="craques">Craques da Bola</strong>
+            </h3>
+        </div>
+
+        <div class="caixa2">
+            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.28.jpeg" alt="Imagem 1" class="imagem1">
+            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.29.jpeg" alt="Imagem 2" class="imagem1">
+        </div>
+        <div class="caixa2">
+            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.35.jpeg" alt="Imagem 4" class="imagem1">
+            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.30.jpeg" alt="Imagem 5" class="imagem1">
+        </div>
+        <div class="caixa2">
+            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.31.jpeg" alt="Imagem 6" class="imagem1">
+            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.30 (2).jpeg" alt="Imagem 7" class="imagem1">
+        </div>
+        <div class="caixa2">
+            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.31 (1).jpeg" alt="Imagem 8" class="imagem1">
+            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.33.jpeg" alt="Imagem 9" class="imagem1">
+        </div>
+        <div class="caixa2">
+            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.34.jpeg" alt="Imagem 10" class="imagem1">
+            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.30 (1).jpeg" alt="Imagem 3" class="imagem1">
+        </div>
+    </section>
+    <script>
+        const toggle = document.querySelector(".menu-toggle");
+        const menu = document.querySelector(".menu");
+
+        toggle.addEventListener("click", (e) => {
+            e.stopPropagation();
+            menu.classList.toggle("show");
+        });
+
+        document.addEventListener("click", (e) => {
+            if (!menu.contains(e.target) && menu.classList.contains("show")) {
+                menu.classList.remove("show");
+            }
+        });
+    </script>
+</body>
+
+</html>

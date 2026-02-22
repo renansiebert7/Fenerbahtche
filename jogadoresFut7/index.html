@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogadores Fut7</title>
+</head>
+
+<body>
+    <section>
+        <header class="top-bar">
+            <p>SITE OFICIAL <strong>FENERBAHTCHÊ</strong></p>
+        </header>
+
+        <nav class="navbar">
+
+            <div class="nav-left">
+                <span class="menu-toggle">☰</span>
+            </div>
+
+            <div class="logo">
+                <img src="../assets/escudo fenerbahtche2.png" alt="Logo do time">
+            </div>
+
+            <ul class="menu">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../sobre-nos/">SOBRE NÓS</a></li>
+                <li class="dropdown">
+                    <a href="#">CONQUISTAS <span class="seta">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../campeonato2023/">Sub16 2023</a></li>
+                        <li><a href="../jogadoresSub16/">Sub16 2025</a></li>
+                        <li><a href="../jogadoresFut7/">Elenco Fut7 2025</a></li>
+                    </ul>
+                </li>
+                <li><a href="../compra-das-camisas/">COMPRE A SUA CAMISA</a></li>
+                <li>FALE CONOSCO</li>
+            </ul>
+
+            <div class="icons">
+                <a href="https://www.instagram.com/fenerbahtche2023/" target="_blank" rel="noopener"
+                    aria-label="Instagram">
+                    <img src="../assets/Instagram.svg" alt="Instagram Fenerbahtchê" class="social-icon">
+                </a>
+                <a href="https://wa.me/5551999550636?text=Olá, gostaria de encomendar minha camisa!" target="_blank"
+                    rel="noopener" aria-label="WhatsApp">
+                    <img src="../assets/whatsapp.png" alt="WhatsApp Fenerbahtchê" class="social-icon">
+                </a>
+            </div>
+        </nav>
+    </section>
+
+    <section>
+        <div class="intro">
+            <h1 class="valores">Elenco Fut7 2025</h1>
+            <h2>Confira o Elenco Que Conquistou o Vice-Campeonato do Fut7 de Salvador do Sul - RS</h2>
+            <h3> <strong class="fenerbas">Fenerbahtchê</strong> ﾠXﾠ <strong class="amizade">Amizade</strong></h3>
+        </div>
+        <div class="caixa">
+            <img src="../assets/15.jpg" alt="Jogador 1" class="imagem1">
+            <img src="../assets/11.jpg" alt="Jogador 2" class="imagem1">
+            <img src="../assets/14.jpg" alt="Jogador 3" class="imagem1">
+        </div>
+        <div class="caixa">
+            <img src="../assets/13.jpg" alt="Jogador 4" class="imagem1">
+            <img src="../assets/8.jpg" alt="Jogador 5" class="imagem1">
+            <img src="../assets/6.jpg" alt="Jogador 6" class="imagem1">
+        </div>
+        <div class="caixa">
+            <img src="../assets/12.jpg" alt="Jogador 7" class="imagem1">
+            <img src="../assets/5.jpg" alt="Jogador 8" class="imagem1">
+            <img src="../assets/3.jpg" alt="Jogador 9" class="imagem1">
+        </div>
+        <div class="caixa">
+            <img src="../assets/2.jpg" alt="Jogador 10" class="imagem1">
+            <img src="../assets/9.jpg" alt="Jogador 11" class="imagem1">
+            <img src="../assets/10.jpg" alt="Jogador 12" class="imagem1">
+        </div>
+        <div class="caixa">
+            <img src="../assets/1.jpg" alt="Jogador 13" class="imagem1">
+            <img src="../assets/7.jpg" alt="Jogador 14" class="imagem1">
+            <img src="../assets/16.jpg" alt="Jogador 15" class="imagem1">
+        </div>
+        <div class="caixa2">
+            <img src="../assets/17.jpg" alt="Técnico 1" class="imagem1">
+            <img src="../assets/18.jpg" alt="Técnico 2" class="imagem1">
+            <img src="../assets/19.jpg" alt="Técnico 3" class="imagem1">
+        </div>
+        <div class="caixa3">
+            <img src="../assets/20.jpg" alt="Patrocinador 1" class="imagem1">
+            <img src="../assets/21.jpg" alt="Patrocinador 2" class="imagem1">
+        </div>
+    <script>
+        const toggle = document.querySelector(".menu-toggle");
+        const menu = document.querySelector(".menu");
+
+        toggle.addEventListener("click", (e) => {
+            e.stopPropagation();
+            menu.classList.toggle("show");
+        });
+
+        document.addEventListener("click", (e) => {
+            if (!menu.contains(e.target) && menu.classList.contains("show")) {
+                menu.classList.remove("show");
+            }
+        });
+    </script>
+</body>
+
+</html>
