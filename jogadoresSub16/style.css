@@ -48,7 +48,7 @@ body {
 }
 
 .navbar.scrolled {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* dropdown */
@@ -63,8 +63,9 @@ body {
     border-radius: 6px;
     min-width: 180px;
     display: none;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    z-index: 9999; /* 👈 ESSENCIAL */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+    /* 👈 ESSENCIAL */
 }
 
 .dropdown-menu li a {
@@ -115,41 +116,52 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.menu > li {
+.menu>li {
     position: relative;
     cursor: pointer;
 }
 
-.menu > li > a:hover {
+.menu>li>a:hover {
     color: #ffcc00;
     transition: 0.3s;
 }
 
-.menu > li > a {
+.menu>li>a {
     text-decoration: none;
     color: white;
-}
-
-.icons {
-    display: flex;
-    gap: 8px;
 }
 
 div.icons img {
     height: 30px;
     cursor: pointer;
+    display: none;
 }
 
-div.icons img:hover {
-    height: 32px;
-    opacity: 0.8;
-    transition: 0.4s;
+.floating-social {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    /* um em cima do outro */
+    gap: 12px;
+    z-index: 9999;
 }
 
-div.icons img:active {
-    opacity: 0.5;
-    transition: 0.4s;
+.floating-social img {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
 }
+
+/* efeito hover */
+.floating-social img:hover {
+    transform: scale(1.12);
+}
+
 
 .caixa {
     display: flex;
@@ -183,7 +195,7 @@ h1 {
     margin: auto;
     margin-top: 30px;
     border-radius: 6px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     font-family: Arial;
 }
 
@@ -282,21 +294,21 @@ h3 {
         display: none;
     }
 
-        .menu-toggle {
+    .menu-toggle {
         display: block;
     }
 
     .menu {
         position: absolute;
-        top: 100px;
-        right: 0;
+        top: 90px;
+        left: 0;
         width: 50%;
         background: #125c00;
         flex-direction: column;
         align-items: center;
         gap: 5px;
         display: none;
-        border-radius: 0 0 0 30px;
+        border-radius: 0 0 30px 30px;
     }
 
     .menu li {
@@ -310,6 +322,24 @@ h3 {
 
     .menu.show {
         display: flex;
+    }
+
+    .logo img {
+        max-height: 70px;
+    }
+
+    .navbar {
+        background: #125c00;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+        position: fixed;
+        top: 30px;
+        left: 0;
+        width: 100%;
+        z-index: 999;
     }
 }
 
@@ -344,5 +374,16 @@ h3 {
 
     .imagem1 {
         width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .floating-social {
+        gap: 5px;
+    }
+
+    .floating-social img {
+        width: 35px;
+        height: 35px;
     }
 }

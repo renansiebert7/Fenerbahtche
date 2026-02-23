@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Campeão do Sub-16 2023</title>
+    <title>Fale Conosco</title>
 </head>
 
 <body>
@@ -53,33 +53,29 @@
     </section>
 
 
-    <section>
-        <div class="intro">
-            <h1 class="valores">Nosso Primeiro Título!</h1>
-            <h2>Conquista do Campeonato do Citadino Sub-16 2023 de Salvador do Sul - RS</h2>
-            <h3> <strong class="fenerbas">Fenerbahtchê</strong> ﾠXﾠ <strong class="craques">Craques da Bola</strong>
-            </h3>
-        </div>
+    <section class="contato">
 
-        <div class="caixa2">
-            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.28.jpeg" alt="Imagem 1" class="imagem1">
-            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.29.jpeg" alt="Imagem 2" class="imagem1">
-        </div>
-        <div class="caixa2">
-            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.35.jpeg" alt="Imagem 4" class="imagem1">
-            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.30.jpeg" alt="Imagem 5" class="imagem1">
-        </div>
-        <div class="caixa2">
-            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.31.jpeg" alt="Imagem 6" class="imagem1">
-            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.30 (2).jpeg" alt="Imagem 7" class="imagem1">
-        </div>
-        <div class="caixa2">
-            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.31 (1).jpeg" alt="Imagem 8" class="imagem1">
-            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.33.jpeg" alt="Imagem 9" class="imagem1">
-        </div>
-        <div class="caixa2">
-            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.34.jpeg" alt="Imagem 10" class="imagem1">
-            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.30 (1).jpeg" alt="Imagem 3" class="imagem1">
+        <h2>FALE CONOSCO</h2>
+
+        <div class="contato-container">
+
+            <div class="formulario">
+                <h3>Envie uma mensagem</h3>
+                <p>Preencha o formulário abaixo e entraremos em contato.</p>
+
+                <form id="formContato">
+                    <div class="formContato">
+                        <input type="text" id="nome" placeholder="Nome*" required>
+                        <input type="email" id="email" placeholder="E-mail*" required>
+                        <input type="tel" id="telefone" placeholder="Telefone*" required>
+                    </div>
+
+                    <textarea id="mensagem" placeholder="Mensagem*" required></textarea>
+                    <p>Você será direcionado ao WhatsApp para enviar sua mensagem.</p>
+                    <button type="submit">Enviar Pelo Whatsapp</button>
+                </form>
+            </div>
+
         </div>
     </section>
     <div class="floating-social">
@@ -93,18 +89,31 @@
         </a>
     </div>
     <script>
-        const toggle = document.querySelector(".menu-toggle");
-        const menu = document.querySelector(".menu");
+        document.addEventListener("DOMContentLoaded", function () {
 
-        toggle.addEventListener("click", (e) => {
-            e.stopPropagation();
-            menu.classList.toggle("show");
-        });
+            document.getElementById("formContato").addEventListener("submit", function (e) {
+                e.preventDefault();
 
-        document.addEventListener("click", (e) => {
-            if (!menu.contains(e.target) && menu.classList.contains("show")) {
-                menu.classList.remove("show");
-            }
+                const nome = document.getElementById("nome").value;
+                const email = document.getElementById("email").value;
+                const telefone = document.getElementById("telefone").value;
+                const mensagem = document.getElementById("mensagem").value;
+
+                const texto = `Olá! Vim pelo site do Fenerbahtchê.
+
+Nome: ${nome}
+Email: ${email}
+Telefone: ${telefone}
+
+Mensagem:
+${mensagem}`;
+
+                const numero = "5551999550636";
+                const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+
+                window.location.href = url;
+            });
+
         });
     </script>
 </body>
