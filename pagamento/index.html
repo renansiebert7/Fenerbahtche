@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <section>
+    <section id="topo">
         <header class="top-bar">
             <p>SITE OFICIAL <strong>FENERBAHTCHÊ</strong></p>
         </header>
@@ -23,19 +23,25 @@
                 <span class="menu-toggle">☰</span>
             </div>
 
-            <div class="logo">
+            <a href="./index.html" class="logo">
                 <img src="../assets/escudo fenerbahtche2.png" alt="Logo do time">
-            </div>
+            </a>
 
             <ul class="menu">
                 <li><a href="./index.html">HOME</a></li>
-                <li><a href="../sobre-nos/">SOBRE NÓS</a></li>
+                <li class="dropdown">
+                    <a href="#">CLUBE <span class="seta">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./sobre-nos/">SOBRE NÓS</a></li>
+                        <li><a href="#meu-footer" class="btn-scroll">PATROCINADORES</a></li>
+                    </ul>
+                </li>
                 <li class="dropdown">
                     <a href="#">CONQUISTAS <span class="seta">▼</span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="sub16-2023.html">Sub16 2023</a></li>
-                        <li><a href="sub16-2025.html">Sub16 2025</a></li>
-                        <li><a href="fut7.html">Elenco Fut7 2025</a></li>
+                        <li><a href="sub16-2023.html">SUB16 2023</a></li>
+                        <li><a href="sub16-2025.html">SUB16 2025</a></li>
+                        <li><a href="fut7.html">ELENCO FUT7 2025</a></li>
                     </ul>
                 </li>
                 <li><a href="../compra-das-camisas/">COMPRE A SUA CAMISA</a></li>
@@ -90,11 +96,79 @@
             <img src="../assets/Instagram.svg" alt="Instagram">
         </a>
 
-        <a href="https://wa.me/5551999550636?text=Olá, gostaria de falar com o Fenerbahtchê!" target="_blank"
-            aria-label="WhatsApp">
+        <a href="https://wa.me/5551999550636?text=Olá!" target="_blank" aria-label="WhatsApp">
             <img src="../assets/whatsapp.png" alt="WhatsApp">
         </a>
     </div>
+
+    <footer id="meu-footer" class="footer">
+
+        <div class="footer-top">
+            <img src="../assets/escudo fenerbahtche2.png" class="footer-logo" alt="Logo">
+        </div>
+
+        <div class="sponsors-slider">
+            <div class="sponsors-track">
+                <img src="../assets/altmann.png">
+                <img src="../assets/apolo.png">
+                <img src="../assets/atelier.png">
+                <img src="../assets/expressao.png">
+                <img src="../assets/hensel.png">
+                <img src="../assets/mega.png">
+                <img src="../assets/odinei.png">
+                <img src="../assets/perfil.png">
+                <img src="../assets/petry.png">
+
+                <img src="../assets/altmann.png">
+                <img src="../assets/apolo.png">
+                <img src="../assets/atelier.png">
+                <img src="../assets/expressao.png">
+                <img src="../assets/hensel.png">
+                <img src="../assets/mega.png">
+                <img src="../assets/odinei.png">
+                <img src="../assets/perfil.png">
+                <img src="../assets/petry.png">
+            </div>
+        </div>
+
+
+        <div class="footer-menu">
+            <div class="col">
+                <h3>Home</h3>
+                <a href="../index.html" class="footer-link">Página inicial</a>
+            </div>
+
+            <div class="col">
+                <h3>O Clube</h3>
+                <a href="../sobre-nos/" class="footer-link">Sobre Nós</a>
+                <a href="#meu-footer" class="footer-link">Patrocinadores</a>
+            </div>
+
+            <div class="col">
+                <h3>Conquistas</h3>
+                <a href="../campeonato2023/" class="footer-link">Campeonato 2023</a>
+                <a href="../jogadoresSub16/" class="footer-link">Sub16 2025</a>
+                <a href="../jogadoresFut7/" class="footer-link">Elenco Fut7 2025</a>
+            </div>
+
+            <div class="col">
+                <h3>Camisas</h3>
+                <a href="../compra-das-camisas/" class="footer-link">Compre a sua camisa</a>
+            </div>
+
+            <div class="col">
+                <h3>Contato</h3>
+                <a href="../faleconosco/" class="footer-link">Fale Conosco</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 - Fenerbahtchê. Todos os direitos reservados.
+            <a href="./index.html" class="voltar-topo">Voltar ao Topo</a>
+        </div>
+
+    </footer>
+
 </body>
 
 <script>

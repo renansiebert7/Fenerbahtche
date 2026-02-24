@@ -143,8 +143,7 @@ div.icons img {
     right: 20px;
     display: flex;
     flex-direction: column;
-    /* um em cima do outro */
-    gap: 12px;
+    gap: 8px;
     z-index: 9999;
 }
 
@@ -240,6 +239,163 @@ h3 {
     flex-wrap: wrap;
     gap: 70px;
     padding: 20px;
+}
+
+#ultima {
+    margin-bottom: 100px;
+}
+
+.footer {
+    background: #830000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.footer-top {
+    background: #830000;
+    text-align: center;
+    padding: 15px 0 5px;
+    padding-top: 0;
+    position: relative;
+}
+
+.footer-logo {
+    height: 110px;
+    position: relative;
+    top: -55px;
+}
+
+.sponsors-slider {
+    overflow: hidden;
+    background: #830000;
+    padding: 15px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sponsors-track {
+    display: flex;
+    gap: 60px;
+    width: max-content;
+    animation: scroll 25s linear infinite;
+}
+
+.sponsors-track img {
+    height: 75px;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+.sponsors-track img:hover {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+.sponsors-slider:hover .sponsors-track {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 40px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-menu .col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-menu h3 {
+    margin-bottom: 10px;
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 4px 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.footer-menu a:hover {
+    opacity: 1;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 13px;
+    gap: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.voltar-topo {
+    text-decoration: none;
+    color: white !important;
+    font-size: 14px;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+.voltar-topo:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+.footer-link {
+    display: table;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 8px 0;
+    position: relative;
+    padding-left: 18px;
+    width: auto;
+}
+
+.footer-link::before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+    color: white;
+}
+
+.footer-link::after {
+    content: "";
+    position: absolute;
+    left: 18px;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.6);
+    transition: width 0.3s ease;
+}
+
+.footer-link:hover::after {
+    width: calc(100% - 18px);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 @media (max-width: 1600px) {
@@ -385,5 +541,31 @@ h3 {
     .floating-social img {
         width: 35px;
         height: 35px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        text-align: left;
+        gap: 25px;
+    }
+
+    .footer-link:hover::after {
+        width: 20%;
+    }
+
+    .footer-logo {
+        height: 90px;
+        position: relative;
+        top: -55px;
+    }
+
+    .sponsors-track img {
+        height: 55px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
     }
 }
