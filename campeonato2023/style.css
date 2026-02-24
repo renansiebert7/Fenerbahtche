@@ -267,19 +267,21 @@ h3 {
     background: #830000;
     padding: 15px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
 }
 
 .sponsors-track {
     display: flex;
     gap: 60px;
     width: max-content;
-    animation: scroll 25s linear infinite;
+    animation: scrollLoop 18s linear infinite;
 }
 
 .sponsors-track img {
     height: 75px;
     opacity: 0.9;
     transition: 0.3s;
+    flex-shrink: 0;
 }
 
 .sponsors-track img:hover {
@@ -291,13 +293,13 @@ h3 {
     animation-play-state: paused;
 }
 
-@keyframes scroll {
+@keyframes scrollLoop {
     from {
-        transform: translateX(0);
+        transform: translate3d(0, 0, 0);
     }
 
     to {
-        transform: translateX(-50%);
+        transform: translate3d(-50%, 0, 0);
     }
 }
 
@@ -389,10 +391,6 @@ h3 {
 
 .footer-link:hover::after {
     width: calc(100% - 18px);
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 @media (max-width: 1385px) {
@@ -551,5 +549,10 @@ html {
         flex-direction: column;
         gap: 8px;
         text-align: center;
+    }
+
+    .footer-menu h3 {
+        text-align: left;
+        color: white;
     }
 }

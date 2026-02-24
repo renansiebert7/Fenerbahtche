@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <section id="topo">
+    <section>
         <header class="top-bar">
             <p>SITE OFICIAL <strong>FENERBAHTCHÊ</strong></p>
         </header>
@@ -20,7 +20,7 @@
                 <span class="menu-toggle">☰</span>
             </div>
 
-            <a href="./index.html" class="logo">
+            <a href="../index.html" class="logo">
                 <img src="../assets/escudo fenerbahtche2.png" alt="Logo do time">
             </a>
 
@@ -30,7 +30,7 @@
                     <a href="#">CLUBE <span class="seta">▼</span></a>
                     <ul class="dropdown-menu">
                         <li><a href="../sobre-nos/">SOBRE NÓS</a></li>
-                        <li><a href="#meu-footer" class="btn-scroll">PATROCINADORES</a></li>    
+                        <li><a href="#meu-footer" class="btn-scroll">PATROCINADORES</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -187,6 +187,20 @@ ${mensagem}`;
                 window.location.href = url;
             });
 
+        });
+
+        const toggle = document.querySelector(".menu-toggle");
+        const menu = document.querySelector(".menu");
+
+        toggle.addEventListener("click", (e) => {
+            e.stopPropagation();
+            menu.classList.toggle("show");
+        });
+
+        document.addEventListener("click", (e) => {
+            if (!menu.contains(e.target) && menu.classList.contains("show")) {
+                menu.classList.remove("show");
+            }
         });
     </script>
 </body>
