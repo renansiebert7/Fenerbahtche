@@ -303,6 +303,24 @@ div.icons img {
     border-radius: 6px;
     cursor: pointer;
     transition: background .3s ease;
+
+}
+
+.loader {
+    display: none;
+    margin: 20px auto 0;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #ccc;
+    border-top: 4px solid #830000;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .mascara-formulario {
@@ -313,8 +331,10 @@ div.icons img {
     height: 100vh;
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
     transition: visibility 2s ease-in-out;
+    z-index: 2;
 }
 
+/* Estilos para o footer */
 .footer {
     background: #830000;
     color: white;
@@ -337,7 +357,7 @@ div.icons img {
 
 .sponsors-slider {
     overflow: hidden;
-    background: #830000;
+    background: linear-gradient(#830000 1%, #f4f4f4 99%, #830000 100%);
     padding: 15px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     position: relative;

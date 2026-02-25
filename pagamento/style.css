@@ -154,7 +154,6 @@ div.icons img {
     transition: 0.3s;
 }
 
-/* efeito hover */
 .floating-social img:hover {
     transform: scale(1.12);
 }
@@ -167,6 +166,7 @@ div.icons img {
     border-radius: 10px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .pagamento-box h1 {
@@ -265,7 +265,7 @@ button:active {
 
 .sponsors-slider {
     overflow: hidden;
-    background: #830000;
+    background: linear-gradient(#830000 1%, #f4f4f4 99%, #830000 100%);
     padding: 15px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     position: relative;
