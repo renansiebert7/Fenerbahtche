@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Compra das Camisas</title>
 </head>
@@ -58,7 +59,7 @@
         </nav>
     </section>
 
-    <div class="camisash2">
+    <div class="camisash2" data-aos="fade-up">
         <h1 class="final">Vista as Cores do Fenerbahtchê</h1>
         <h3>A camisa da nossa torcida já está disponível.<br>
             Garanta a sua e faça parte dessa história.</h3>
@@ -66,7 +67,7 @@
 
     <form class="form-camisas"
         action="https://script.google.com/macros/s/AKfycbx_LkpfUFHvWeebDDgOmwuk75zUpJZ7U3_-KerfUhi_Va60xgeUJCbzhbNqtg_Zw81y/exec"
-        method="POST">
+        method="POST" data-aos="fade-up">
         <a>Garanta a Sua Aqui</a>
         <input placeholder="Nome na Camisa" type="text" name="name" required>
         <input placeholder="Número na Camisa" type="number" name="number" required>
@@ -78,16 +79,16 @@
         <div class="loader"></div>
     </form>
 
-    <div class="caixa4">
+    <div class="caixa4" data-aos="fade-up">
         <img src="../assets/magem camisa torcida 2.jpeg" alt="Camisa" class="imagem1">
     </div>
 
-    <div class="preco-box">
+    <div class="preco-box" data-aos="fade-up">
         <h2>A partir de R$79,99</h2>
         <p>Edição limitada 2025</p>
     </div>
 
-    <div class="beneficios">
+    <div class="beneficios" data-aos="fade-up">
         <p>✔ Tecido esportivo confortável</p>
         <p>✔ Personalização com nome e número</p>
         <p>✔ Uniforme oficial da torcida</p>
@@ -99,7 +100,7 @@
     <div class="mascara"></div>
 
     <div>
-        <button class="btn-comprar" onclick="cliqueiNoBotao()">
+        <button class="btn-comprar" onclick="cliqueiNoBotao()" data-aos="fade-up">
             GARANTIR MINHA CAMISA
         </button>
     </div>
@@ -113,7 +114,7 @@
             <img src="../assets/whatsapp.png" alt="WhatsApp">
         </a>
     </div>
-    <footer id="meu-footer" class="footer">
+    <footer id="meu-footer" class="footer" data-aos="fade-up">
 
         <div class="footer-top">
             <img src="../assets/escudo fenerbahtche2.png" class="footer-logo" alt="Logo">
@@ -177,11 +178,17 @@
         <div class="footer-bottom">
             © 2026 - Fenerbahtchê. Todos os direitos reservados.
             <a href="./index.html" class="voltar-topo">Voltar ao Topo</a>
+            <p>Desenvolvido por
+                <a href="https://www.linkedin.com/in/renansiebert/" target="_blank" class="voltar-topo">
+                    Renan Siebert
+                </a>
+            </p>
         </div>
 
     </footer>
 
     <script src="java.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
         const toggle = document.querySelector(".menu-toggle");
         const menu = document.querySelector(".menu");
@@ -195,6 +202,11 @@
             if (!menu.contains(e.target) && menu.classList.contains("show")) {
                 menu.classList.remove("show");
             }
+        });
+
+        AOS.init({
+            duration: 1000,
+            once: true
         });
     </script>
 

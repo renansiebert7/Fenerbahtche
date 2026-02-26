@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <link rel="stylesheet" href="style.css">
     <title>Fale Conosco</title>
 </head>
@@ -59,7 +60,7 @@
     </section>
 
 
-    <section class="contato">
+    <section class="contato" data-aos="fade-up">
 
         <h2>FALE CONOSCO</h2>
 
@@ -93,7 +94,7 @@
             <img src="../assets/whatsapp.png" alt="WhatsApp">
         </a>
     </div>
-    <footer id="meu-footer" class="footer">
+    <footer id="meu-footer" class="footer" data-aos="fade-up">
 
         <div class="footer-top">
             <img src="../assets/escudo fenerbahtche2.png" class="footer-logo" alt="Logo">
@@ -157,10 +158,15 @@
         <div class="footer-bottom">
             © 2026 - Fenerbahtchê. Todos os direitos reservados.
             <a href="./index.html" class="voltar-topo">Voltar ao Topo</a>
+            <p>Desenvolvido por
+                <a href="https://www.linkedin.com/in/renansiebert/" target="_blank" class="voltar-topo">
+                    Renan Siebert
+                </a>
+            </p>
         </div>
-
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
 
@@ -201,6 +207,11 @@ ${mensagem}`;
             if (!menu.contains(e.target) && menu.classList.contains("show")) {
                 menu.classList.remove("show");
             }
+        });
+
+        AOS.init({
+            duration: 1000,
+            once: true
         });
     </script>
 </body>

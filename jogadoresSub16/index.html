@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Bicampeão do Sub-16 2025</title>
 </head>
@@ -57,37 +58,37 @@
 </section>
 
 <section>
-    <div class="intro">
+    <div class="intro" data-aos="fade-up">
         <h1 class="valores">Bicampeonato Citadino Sub-16 2025</h1>
         <h2>Confira Alguns Clicks Dessa Conquista de Maneira Invicta!</h2>
         <h3> <strong class="fenerbas">Fenerbahtchê</strong> ﾠXﾠ <strong class="buscapé">Buscapé</strong></h3>
     </div>
 
-    <div class="caixa">
+    <div class="caixa" data-aos="fade-up">
         <img src="../assets/IMG_7675-Aprimorado-NR-convertido-de-jpg.jpeg" alt="Imagem 1" class="imagem1">
         <img src="../assets/IMG_7725-Aprimorado-NR-convertido-de-jpg.jpeg" alt="Imagem 2" class="imagem1">
         <img src="../assets/IMG_7911-Aprimorado-NR-convertido-de-jpg.jpeg" alt="Imagem 3" class="imagem1">
     </div>
-    <div class="caixa">
+    <div class="caixa" data-aos="fade-up">
         <img src="../assets/IMG_7977-Aprimorado-NR-convertido-de-jpg.jpeg" alt="Imagem 4" class="imagem1">
         <img src="../assets/IMG_8029-Aprimorado-NR-convertido-de-jpg.jpeg" alt="Imagem 5" class="imagem1">
         <img src="../assets/IMG_8096-Aprimorado-NR-convertido-de-jpg.jpeg" alt="Imagem 6" class="imagem1">
     </div>
-    <div class="caixa">
+    <div class="caixa" data-aos="fade-up">
         <img src="../assets/IMG_8179-Aprimorado-NR-convertido-de-jpg.jpeg" alt="Imagem 7" class="imagem1">
         <img src="../assets/IMG_8293-Aprimorado-NR-convertido-de-jpg.jpeg" alt="Imagem 8" class="imagem1">
         <img src="../assets/IMG_8345-Aprimorado-NR-convertido-de-jpg.jpeg" alt="Imagem 9" class="imagem1">
     </div>
-    <div class="caixa">
+    <div class="caixa" data-aos="fade-up">
         <img src="../assets/IMG_8379-Aprimorado-NR-convertido-de-jpg.jpeg" alt="Imagem 10" class="imagem1">
         <img src="../assets/IMG_8597-Aprimorado-NR-convertido-de-jpg.jpeg" alt="Imagem 11" class="imagem1">
         <img src="../assets/IMG_8618-Aprimorado-NR-convertido-de-jpg.jpeg" alt="Imagem 12" class="imagem1">
     </div>
-    <div class="caixa2">
+    <div class="caixa2" data-aos="fade-up">
         <img src="../assets/IMG_8726-Aprimorado-NR-convertido-de-jpg.jpeg" alt="Imagem 13" class="imagem1">
         <img src="../assets/WhatsApp Image 2025-10-04 at 14.20.39.jpeg" alt="Imagem 15" class="imagem1">
     </div>
-    <div class="caixa2" id="ultima">
+    <div class="caixa2" id="ultima" data-aos="fade-up">
         <img src="../assets/WhatsApp Image 2025-10-03 at 22.58.06.jpeg" alt="Imagem 14" class="imagem1">
     </div>
 </section>
@@ -100,7 +101,7 @@
         <img src="../assets/whatsapp.png" alt="WhatsApp">
     </a>
 </div>
-<footer id="meu-footer" class="footer">
+<footer id="meu-footer" class="footer" data-aos="fade-up">
 
     <div class="footer-top">
         <img src="../assets/escudo fenerbahtche2.png" class="footer-logo" alt="Logo">
@@ -164,10 +165,16 @@
     <div class="footer-bottom">
         © 2026 - Fenerbahtchê. Todos os direitos reservados.
         <a href="./index.html" class="voltar-topo">Voltar ao Topo</a>
+        <p>Desenvolvido por
+            <a href="https://www.linkedin.com/in/renansiebert/" target="_blank" class="voltar-topo">
+                Renan Siebert
+            </a>
+        </p>
     </div>
 
 </footer>
 
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
     const toggle = document.querySelector(".menu-toggle");
     const menu = document.querySelector(".menu");
@@ -181,6 +188,11 @@
         if (!menu.contains(e.target) && menu.classList.contains("show")) {
             menu.classList.remove("show");
         }
+    });
+
+    AOS.init({
+        duration: 1000,
+        once: true
     });
 </script>
 </body>

@@ -7,6 +7,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Pagamento Camisas</title>
 </head>
@@ -34,7 +35,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="../sobre-nos/">SOBRE NÓS</a></li>
                         <li><a href="#meu-footer" class="btn-scroll">PATROCINADORES</a></li>
-                    </ul>   
+                    </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#">CONQUISTAS <span class="seta">▼</span></a>
@@ -61,7 +62,7 @@
         </nav>
     </section>
 
-    <div class="pagamento-box">
+    <div class="pagamento-box" data-aos="fade-up">
 
         <h1>PAGAMENTO</h1>
 
@@ -102,7 +103,7 @@
         </a>
     </div>
 
-    <footer id="meu-footer" class="footer">
+    <footer id="meu-footer" class="footer" data-aos="fade-up">
 
         <div class="footer-top">
             <img src="../assets/escudo fenerbahtche2.png" class="footer-logo" alt="Logo">
@@ -166,12 +167,17 @@
         <div class="footer-bottom">
             © 2026 - Fenerbahtchê. Todos os direitos reservados.
             <a href="./index.html" class="voltar-topo">Voltar ao Topo</a>
+            <p>Desenvolvido por
+                <a href="https://www.linkedin.com/in/renansiebert/" target="_blank" class="voltar-topo">
+                    Renan Siebert
+                </a>
+            </p>
         </div>
 
     </footer>
 
 </body>
-
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
     function copiarLink() {
         let link = document.getElementById("linkPagamento");
@@ -194,6 +200,11 @@
         if (!menu.contains(e.target) && menu.classList.contains("show")) {
             menu.classList.remove("show");
         }
+    });
+
+    AOS.init({
+        duration: 1000,
+        once: true
     });
 
 </script>

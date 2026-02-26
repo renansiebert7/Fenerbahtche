@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Fenerbahtchê</title>
 </head>
@@ -62,7 +63,7 @@
         </nav>
     </section>
 
-    <section class="hero">
+    <section class="hero" data-aos="fade-down">
 
         <div class="slides">
 
@@ -85,7 +86,7 @@
         </div>
     </section>
 
-    <section class="sobre">
+    <section class="sobre" data-aos="fade-up">
         <div class="sobre-container">
 
             <div class="sobre-texto">
@@ -123,7 +124,7 @@
         </div>
     </section>
 
-    <section class="titulos">
+    <section class="titulos" data-aos="fade-up">
 
         <h2>Títulos</h2>
         <p class="subtitulo">Conheça nossas conquistas</p>
@@ -156,7 +157,7 @@
         </div>
     </section>
 
-    <section class="jersey">
+    <section class="jersey" data-aos="fade-up">
         <div class="jersey-content">
             <img src="./assets/imagem camisa torcida 1.jpeg" alt="Camisa Oficial">
 
@@ -168,7 +169,7 @@
         </div>
     </section>
 
-    <section class="instagram">
+    <section class="instagram" data-aos="fade-up">
         <h2>Últimas do Instagram</h2>
 
         <div class="insta-grid">
@@ -453,7 +454,7 @@
         </div>
     </section>
 
-    <div class="floating-social">
+    <div class="floating-social" data-aos="fade-up">
         <a href="https://www.instagram.com/fenerbahtche2023/" target="_blank" aria-label="Instagram">
             <img src="./assets/Instagram.svg" alt="Instagram">
         </a>
@@ -465,7 +466,7 @@
 
     </div>
 
-    <footer id="meu-footer" class="footer">
+    <footer id="meu-footer" class="footer" data-aos="fade-up">
 
         <div class="footer-top">
             <img src="./assets/escudo fenerbahtche2.png" class="footer-logo" alt="Logo">
@@ -496,7 +497,7 @@
         </div>
 
 
-        <div class="footer-menu">
+        <div class="footer-menu" data-aos="fade-up">
             <div class="col">
                 <h3>Home</h3>
                 <a href="./index.html" class="footer-link">Página inicial</a>
@@ -529,11 +530,23 @@
         <div class="footer-bottom">
             © 2026 - Fenerbahtchê. Todos os direitos reservados.
             <a href="./index.html" class="voltar-topo">Voltar ao Topo</a>
+            <p>Desenvolvido por
+                <a href="https://www.linkedin.com/in/renansiebert/" target="_blank" class="voltar-topo">
+                    Renan Siebert
+                </a>
+            </p>
         </div>
 
     </footer>
 
     <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 
 </html>
