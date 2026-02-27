@@ -108,6 +108,10 @@ body {
     transition: 0.4s;
 }
 
+.logo img:active {
+    opacity: 0.5;
+}
+
 .menu {
     list-style: none;
     display: flex;
@@ -160,7 +164,6 @@ div.icons img {
 .floating-social img:hover {
     transform: scale(1.12);
 }
-
 
 .caixa {
     display: flex;

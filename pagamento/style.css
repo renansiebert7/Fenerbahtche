@@ -106,6 +106,10 @@ body {
     transition: 0.4s;
 }
 
+.logo img:active {
+    opacity: 0.5;
+}
+
 .menu {
     list-style: none;
     display: flex;
