@@ -51,7 +51,6 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* dropdown */
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -159,7 +158,6 @@ div.icons img {
     transition: 0.3s;
 }
 
-/* efeito hover */
 .floating-social img:hover {
     transform: scale(1.12);
 }
@@ -232,6 +230,8 @@ ul {
     margin-bottom: 100px;
     border-radius: 6px;
 }
+
+/*estilos footer*/
 
 .footer {
     background: #830000;
@@ -385,6 +385,7 @@ ul {
 }
 
 /*responsividade */
+
 @media (max-width: 1024px) {
     .menu {
         display: none;

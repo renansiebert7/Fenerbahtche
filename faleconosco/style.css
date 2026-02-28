@@ -12,6 +12,7 @@ body {
 }
 
 /* Estilos para a seção de início */
+
 .nav-left {
     display: none;
 }
@@ -51,7 +52,6 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* dropdown */
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -159,7 +159,6 @@ div.icons img {
     transition: 0.3s;
 }
 
-/* efeito hover */
 .floating-social img:hover {
     transform: scale(1.12);
 }
@@ -185,7 +184,6 @@ div.icons img {
     justify-content: center;
 }
 
-/* FORM */
 .formulario {
     flex: 2;
 }
@@ -238,6 +236,8 @@ button {
 button:hover {
     background: #333;
 }
+
+/*estilos para seção footer*/
 
 .footer {
     background: #830000;
@@ -389,6 +389,8 @@ button:hover {
 .footer-link:hover::after {
     width: calc(100% - 18px);
 }
+
+/*responsividade*/
 
 @media (max-width: 1024px) {
     .menu {

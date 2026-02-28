@@ -10,6 +10,8 @@ body {
     padding-top: 120px;
 }
 
+/* Estilos para a seção de início */
+
 .nav-left {
     display: none;
 }
@@ -160,6 +162,8 @@ div.icons img {
     transform: scale(1.12);
 }
 
+/*estilos para seção de slides*/
+
 .hero {
     position: relative;
     width: 100%;
@@ -265,6 +269,8 @@ div.icons img {
     z-index: 1;
 }
 
+/*estilos para seção sobre*/
+
 .sobre {
     background: #f4f4f4;
     padding: 60px 20px;
@@ -324,6 +330,8 @@ div.icons img {
     max-width: 450px;
     border-radius: 8px;
 }
+
+/*estilos para seção titulos*/
 
 .titulos {
     text-align: center;
@@ -398,6 +406,7 @@ div.icons img {
 }
 
 /* Estilos para camisa */
+
 .jersey {
     padding: 60px 20px;
     background-color: #f4f4f4;
@@ -437,6 +446,7 @@ div.icons img {
 }
 
 /* Estilos para a seção de Instagram */
+
 .instagram {
     padding: 60px 20px;
     text-align: center;
@@ -461,6 +471,7 @@ div.icons img {
 }
 
 /* Estilos para o footer */
+
 .footer {
     background: #830000;
     color: white;
@@ -612,6 +623,8 @@ div.icons img {
     width: calc(100% - 18px);
 }
 
+/*responsividade*/
+
 @media (max-width: 1024px) {
 
     .menu {
@@ -699,6 +712,19 @@ div.icons img {
     }
 }
 
+@media (max-width: 1062px) {
+    .insta-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 @media (max-width: 768px) {
 
     .slides {
@@ -764,12 +790,6 @@ div.icons img {
     }
 }
 
-@media (max-width: 1062px) {
-    .insta-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 @media (max-width: 717px) {
     .insta-grid {
         grid-template-columns: 1fr;
@@ -777,12 +797,5 @@ div.icons img {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-}
-
-@media (max-width: 900px) {
-    .sobre-container {
-        flex-direction: column;
-        text-align: center;
     }
 }

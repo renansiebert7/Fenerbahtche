@@ -51,7 +51,6 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* dropdown */
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -159,10 +158,11 @@ div.icons img {
     transition: 0.3s;
 }
 
-/* efeito hover */
 .floating-social img:hover {
     transform: scale(1.12);
 }
+
+/* Estilos para a seção de início */
 
 .caixa {
     display: flex;
@@ -245,6 +245,8 @@ h3 {
     gap: 70px;
     padding: 20px;
 }
+
+/*estilos para footer*/
 
 .footer {
     background: #830000;
@@ -396,6 +398,8 @@ h3 {
 .footer-link:hover::after {
     width: calc(100% - 18px);
 }
+
+/*responsividade*/
 
 @media (max-width: 1385px) {
     .caixa {

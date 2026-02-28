@@ -50,7 +50,6 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* dropdown */
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -162,6 +161,8 @@ div.icons img {
     transform: scale(1.12);
 }
 
+/*estilos para a seção de pagamento*/
+
 .pagamento-box {
     max-width: 420px;
     margin: 60px auto;
@@ -246,6 +247,8 @@ button:active {
     background: rgb(0, 207, 52);
     opacity: 0.8;
 }
+
+/*estilos para o footer*/
 
 .footer {
     background: #830000;
@@ -397,6 +400,8 @@ button:active {
 .footer-link:hover::after {
     width: calc(100% - 18px);
 }
+
+/*responsividade*/
 
 @media (max-width: 1024px) {
     .menu {

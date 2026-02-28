@@ -51,7 +51,6 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* dropdown */
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -65,7 +64,6 @@ body {
     display: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     z-index: 9999;
-    /* 👈 ESSENCIAL */
 }
 
 .dropdown-menu li a {
@@ -160,10 +158,11 @@ div.icons img {
     transition: 0.3s;
 }
 
-/* efeito hover */
 .floating-social img:hover {
     transform: scale(1.12);
 }
+
+/*estilo para a seção de jogadores*/
 
 .caixa {
     display: flex;
@@ -247,6 +246,8 @@ h3 {
 #ultima {
     margin-bottom: 100px;
 }
+
+/*estilo para o footer*/
 
 .footer {
     background: #830000;
@@ -398,6 +399,8 @@ h3 {
 .footer-link:hover::after {
     width: calc(100% - 18px);
 }
+
+/*responsividade*/
 
 @media (max-width: 1600px) {
     .caixa {
