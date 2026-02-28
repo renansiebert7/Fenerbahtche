@@ -72,7 +72,7 @@ Durante o desenvolvimento foram trabalhados:
 
 ## 📷 Preview
 
-
+<img src="https://github.com/renansiebert7/Fenerbahtche/blob/master/assets/DESIGN%20READ.ME%20GIT%20HUB.png?raw=true">
 
 ## 👨‍💻 Desenvolvido por
 
