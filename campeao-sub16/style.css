@@ -41,6 +41,12 @@ body {
     left: 0;
     width: 100%;
     z-index: 999;
+    transition: background 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: rgba(18, 92, 0, 0.7);
+    backdrop-filter: blur(8px);
 }
 
 .navbar {
@@ -481,7 +487,8 @@ h3 {
         top: 90px;
         left: 0;
         width: 50%;
-        background: #125c00;
+        background: rgba(18, 92, 0, 0.7);
+        backdrop-filter: blur(8px);
         flex-direction: column;
         align-items: center;
         gap: 5px;

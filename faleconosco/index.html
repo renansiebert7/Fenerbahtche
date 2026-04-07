@@ -64,7 +64,7 @@
     <section class="contato" data-aos="fade-up">
 
         <h2>FALE CONOSCO</h2>
- 
+
         <div class="contato-container">
 
             <div class="formulario">
@@ -86,7 +86,7 @@
 
         </div>
     </section>
-    
+
     <div class="floating-social">
         <a href="https://www.instagram.com/fenerbahtche2023/" target="_blank" aria-label="Instagram">
             <img src="../assets/Instagram.svg" alt="Instagram">
@@ -214,6 +214,17 @@ ${mensagem}`;
         AOS.init({
             duration: 1000,
             once: true
+        });
+
+
+        const navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
         });
     </script>
 </body>

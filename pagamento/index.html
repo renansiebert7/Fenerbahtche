@@ -72,7 +72,8 @@
             Após o pagamento, envie o <strong>comprovante</strong> via WhatsApp.
         </p>
 
-        <img src="../assets/Pague com pix moderno verde branco preto a4 (1).png" alt="QR Code Pix" class="pix" data-aos="fade-up">
+        <img src="../assets/Pague com pix moderno verde branco preto a4 (1).png" alt="QR Code Pix" class="pix"
+            data-aos="fade-up">
 
         <div class="codigo">
             <input type="text" id="linkPagamento"
@@ -206,6 +207,17 @@
     AOS.init({
         duration: 1000,
         once: true
+    });
+
+
+    const navbar = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
     });
 
 </script>

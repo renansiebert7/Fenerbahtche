@@ -115,7 +115,7 @@
             <img src="../assets/whatsapp.png" alt="WhatsApp">
         </a>
     </div>
-    
+
     <footer id="meu-footer" class="footer" data-aos="fade-up">
 
         <div class="footer-top">
@@ -209,6 +209,16 @@
         AOS.init({
             duration: 1000,
             once: true
+        });
+
+        const navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
         });
     </script>
 

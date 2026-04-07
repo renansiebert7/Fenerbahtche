@@ -2,11 +2,11 @@ const slides = document.querySelectorAll(".slide");
 let index = 0;
 
 function changeSlide() {
-    slides[index].classList.remove("active");
+  slides[index].classList.remove("active");
 
-    index = (index + 1) % slides.length;
+  index = (index + 1) % slides.length;
 
-    slides[index].classList.add("active");
+  slides[index].classList.add("active");
 }
 
 setInterval(changeSlide, 4000);
@@ -20,12 +20,23 @@ const toggle = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".menu");
 
 toggle.addEventListener("click", (e) => {
-  e.stopPropagation(); 
+  e.stopPropagation();
   menu.classList.toggle("show");
 });
 
 document.addEventListener("click", (e) => {
   if (!menu.contains(e.target) && menu.classList.contains("show")) {
     menu.classList.remove("show");
+  }
+});
+
+
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
   }
 });

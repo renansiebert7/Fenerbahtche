@@ -70,24 +70,34 @@
         </div>
 
         <div class="caixa2">
-            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.28.jpeg" alt="Imagem 1" class="imagem1" data-aos="fade-up">
-            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.29.jpeg" alt="Imagem 2" class="imagem1" data-aos="fade-up">
+            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.28.jpeg" alt="Imagem 1" class="imagem1"
+                data-aos="fade-up">
+            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.29.jpeg" alt="Imagem 2" class="imagem1"
+                data-aos="fade-up">
         </div>
         <div class="caixa2">
-            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.35.jpeg" alt="Imagem 4" class="imagem1" data-aos="fade-up">
-            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.30.jpeg" alt="Imagem 5" class="imagem1" data-aos="fade-up">
+            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.35.jpeg" alt="Imagem 4" class="imagem1"
+                data-aos="fade-up">
+            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.30.jpeg" alt="Imagem 5" class="imagem1"
+                data-aos="fade-up">
         </div>
         <div class="caixa2">
-            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.31.jpeg" alt="Imagem 6" class="imagem1" data-aos="fade-up">
-            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.30 (2).jpeg" alt="Imagem 7" class="imagem1" data-aos="fade-up">
+            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.31.jpeg" alt="Imagem 6" class="imagem1"
+                data-aos="fade-up">
+            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.30 (2).jpeg" alt="Imagem 7" class="imagem1"
+                data-aos="fade-up">
         </div>
         <div class="caixa2">
-            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.31 (1).jpeg" alt="Imagem 8" class="imagem1" data-aos="fade-up">
-            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.33.jpeg" alt="Imagem 9" class="imagem1" data-aos="fade-up">
+            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.31 (1).jpeg" alt="Imagem 8" class="imagem1"
+                data-aos="fade-up">
+            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.33.jpeg" alt="Imagem 9" class="imagem1"
+                data-aos="fade-up">
         </div>
         <div class="caixa2" id="ultima">
-            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.34.jpeg" alt="Imagem 10" class="imagem1" data-aos="fade-up">
-            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.30 (1).jpeg" alt="Imagem 3" class="imagem1" data-aos="fade-up">
+            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.34.jpeg" alt="Imagem 10" class="imagem1"
+                data-aos="fade-up">
+            <img src="../assets/WhatsApp Image 2025-10-15 at 13.56.30 (1).jpeg" alt="Imagem 3" class="imagem1"
+                data-aos="fade-up">
         </div>
     </section>
 
@@ -100,7 +110,7 @@
             <img src="../assets/whatsapp.png" alt="WhatsApp">
         </a>
     </div>
-    
+
     <footer id="meu-footer" class="footer" data-aos="fade-up">
 
         <div class="footer-top">
@@ -191,6 +201,16 @@
         AOS.init({
             duration: 1000,
             once: true
+        });
+
+        const navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
         });
     </script>
 </body>
